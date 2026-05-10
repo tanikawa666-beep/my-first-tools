@@ -23,7 +23,7 @@ load_dotenv()
 # ─── 設定 ────────────────────────────────────────────────────────────────────
 KEYWORDS = [k.strip() for k in os.getenv(
     "PUBMED_KEYWORDS",
-    "machine learning clinical medicine,randomized controlled trial,oncology treatment,cardiology,neurology"
+    "ERCP,EUS,pancreatic cancer,bile duct cancer,bile duct stone"
 ).split(",")]
 
 MAX_PAPERS_PER_KEYWORD = 1   # キーワードあたりの最大取得数
