@@ -33,7 +33,7 @@ EMAIL_FROM    = os.getenv("EMAIL_FROM", "")
 EMAIL_TO      = os.getenv("EMAIL_TO", "")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD", "")
 SMTP_HOST     = os.getenv("SMTP_HOST", "smtp.gmail.com")
-SMTP_PORT     = int(os.getenv("SMTP_PORT", "587"))
+SMTP_PORT     = int(os.getenv("SMTP_PORT") or "587")
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
