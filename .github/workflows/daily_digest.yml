@@ -25,7 +25,6 @@ jobs:
 
       - name: 🚀 医学論文ダイジェストを実行・送信
         env:
-          OPENAI_API_KEY:   ${{ secrets.OPENAI_API_KEY }}
           NCBI_API_KEY:     ${{ secrets.NCBI_API_KEY }}
           PUBMED_KEYWORDS:  ${{ secrets.PUBMED_KEYWORDS }}
           EMAIL_FROM:       ${{ secrets.EMAIL_FROM }}
